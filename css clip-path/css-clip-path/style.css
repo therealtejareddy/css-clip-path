@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-items: center;
+}
+.main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+}
+
+.circle {
+    clip-path: circle(50% at 50% 50%);
+    place-self: center;
+}
+
+.ellipse {
+    clip-path: ellipse(50% 30% at 50% 50%);
+    place-self: center;
+
+}
+
+.left {
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    place-self: center;
+}
+
+.rarrow {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    place-self: center;
+}
+
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    place-self: center;
+
+}
